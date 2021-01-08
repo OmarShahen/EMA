@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Cairo";
+  background-color: #fff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.nav-items {
+  font-size: 30px;
+}
+.nav-items ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+.nav-items ul li:hover {
+  border-bottom: 2px solid #00ff00;
+}
+
+.main-header h1 {
+  font-size: 100px;
+}
+.main-header h3 {
+  font-size: 50px;
+}
+.gray-part {
+  background-color: #f6f6f6;
+}
+.gray-part p {
+  font-size: 15px;
+}
+#image-text {
+  background-color: #f6f6f6;
+}
+.level-2 {
+  text-align: center;
+}
+.level-2 h3 {
+  font-weight: bolder;
+  margin-bottom: 80px;
+}
+.text-header {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  text-align: right;
+}
+.header-text {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 30px;
+}
+#middle-photos {
+  background-color: #fff;
+}
+#middle-photos img {
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+#raw-materials {
+  background-color: #fff;
+}
+#raw-materials h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+#raw-materials h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+#raw-materials img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#raw-materials p {
+  font-weight: bold;
+  font-size: 20px;
+}
