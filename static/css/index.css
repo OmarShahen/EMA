@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import url('http://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo';
+    text-align: right;
+}
+
+
+a{
+    color: black;
+    font-size: 2em;
+}
+
+ul li a{
+    margin-right: 2em;
+}
+
+ul li a:hover{
+    color: #5cb85c;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    display: inline;
+}
+
+.top-div-contact{
+    margin-bottom: 0px;
+    text-align: right;
+    padding-right: 50px;
+
+}
+span{
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+
+.parallax{
+    background-image: url('/static/photos/pexels-tom-fisk-2101137.jpg');
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-div-contact{
+    background-color: #303030;
+    color: white;
+}
+.main-headers h1{
+    color: #303030;
+    font-weight: bolder;
+    font-size: 76px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main-headers h1 strong{
+    text-align: center;
+}
+
+.small-icons img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.small-icons{
+    margin-top: 200px;
+}
+.small-icons h3{
+    font-weight: bold;
+}
+.small-icons p{
+    margin-top: 30px;
+    line-height: 2em;
+    color: #777777;
+}
+
+.short-line{
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 21px;
+    height: 2px;
+    width: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #ec1f27;
+}
+
+.about-us{
+    background-color: #f7f7f7;
+}
+.short-line-long{
+    text-align: center;
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 21px;
+    height: 2px;
+    width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #ec1f27;
+}
+.about-us{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.about-us h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+.about-us h3{
+    font-size: 20px;
+    color: #303030;
+    line-height: 2em;
+    
+
+}
+.about-us img{
+    width: 90%;
+}
+.company-birth{
+    font-size: 40px;
+    margin-top: 40px;
+}
