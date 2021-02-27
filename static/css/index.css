@@ -317,8 +317,9 @@ span{
     color: black;
 }
 
+
 .topnav a.active{
-    background-color: #4CAF50;
+    background-color: #F93154;
     color: white;
 }
 
@@ -360,7 +361,7 @@ span{
 }
 
 .contact-us-btn{
-    margin: 10px 10px 5px 0;
+    margin: 10px 20px 5px 0;
 }
 
 
