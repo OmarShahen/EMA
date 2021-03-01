@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>EMA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمتنا</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -12,22 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/80b994f4e9.js" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href = "https://unpkg.com/aos@2.3.0/dist/aos.css">
-    <script src = "https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-
     <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/our-services.css">
 </head>
 <body>
-
-    <!--Top Nav Responsive-->
-
     <div class='topnav' id='myTopnav'>
         <a href="{{url_for('contact_us')}}">تواصل معنا</a>
-        <a href="{{url_for('our_services')}}">اعمالنا</a>
-        <a href="{{url_for('landing_page')}}" class='active'>الرئيسية</a>
+        <a href="{{url_for('our_services')}}" class='active'>اعمالنا</a>
+        <a href="{{url_for('landing_page')}}">الرئيسية</a>
 
         <button class='btn btn-danger btn-sm contact-us-btn' data-toggle="modal" data-target="#myModal" >تواصل معنا</button>
-        <img src="/static/photos/EMA logo.jpg" class="company-logo" style="width: 60px;height: 53.44px;">
+        <img src="/static/photos/EMA logo.jpg"style="width: 60px;height: 53.44px;">
     </div >
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
@@ -79,172 +74,160 @@
     </div>
 
 
-    <!---->
     <div class='container-fluid home parallax'>
         <div class='shaded-div'>
 
             <h1 class='main-title'>
                 EMA<br>
-                     نحن شركة
-                 بنية تحتية و مقولات و استخراج المواد الخام
+                     خدماتنا  
             </h1>
         </div>
     </div>
-    <div class='container'>
-        <div class='main-headers'>
-            <h1 data-aos = "fade-left">
-                للمقولات العامة في البنية التحتية و الانشئات و استخراج المواد الخام
-            </h1>
-            <div class='row small-icons'>
-                <div class='col-xs-12 col-sm-12 col-md-4'>
+    <div class="container header-after-parallax main-headers">
+        <h1>
+             تقدم شركة ايما الخدمات في مجال تنشيط التعدين ، أعمال الأرض ، برامج التعدين ، وهندسة المساحة و
+             نعمل في البنية التحتية من عام 
+             2009
+        </h1>
+    </div>
+    <div class="container-fluid main-services-images">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="/static/photos/جرارات تعمل.jpg" style="width: 100%;height: 300px;">
+                </div>
+                <div class="col-sm-12 col-md-6">
                     <h3>
-                        <img src='/static/photos/mining.svg'>
                         طرق الاستخراج
                     </h3>
-                    <div class='short-line'>
-
-                    </div>
-                    <p data-aos="fade-up-right">
-                          تقوم شركة ايما بستخراج المواد الخام
-                        أعمال الحفر والتراب بما في ذلك الطرق في جميع أنواع التربة باستخدام جميع المعدات المطلوبة مثل الحفارات والمطارق والجرافات واللوادر والقلاب.
-                    </p>
-                </div>
-                <div class='col-xs-12 col-sm-12 col-md-4' style='margin-left: 0px;'>
-                    <h3>
-                        <img src='/static/photos/customer-support.svg'>
-                    عن خدمتنا
-                    </h3>
-                    <div class='short-line'>
-
-                    </div>
-                    <p data-aos="fade-up-right">
-                        تقدم شركة ايما الخدمات في مجال تنشيط التعدين ، أعمال الأرض ، برامج التعدين ، وهندسة المساحة.
-                        أعمال الحفر والتراب بما في ذلك الطرق في جميع أنواع التربة باستخدام جميع المعدات المطلوبة مثل الحفارات والمطارق والجرافات واللوادر والقلاب.
-                        أعمال المسح بما في ذلك المسح الطوبوغرافي ، المحدد ، المحاذاة ، خطط التعدين ، العد المادي ، ... إلخ.
-                                        </div>
-                <div class='col-xs-12 col-sm-12 col-md-4'>
-                    <h3>
-                        <img src='/static/photos/Supply-marketeconomy-factory-supplier-distribution-rawmaterial-128.png'>
-                         المواد الخام
-                    </h3>
-                    <div class='short-line'>
-
-                    </div>
-                    <p data-aos="fade-up-right">
-                        استخراج المواد الخام من الجبال مثل الجبس و الطفلة و الدبش و دولوميت و رمل و سن                    </p>
-                </div>
-            </div>
-
-            <!--Finished The small Icons part-->
-        </div>
-    </div>
-    <div class='container-fluid about-us'>
-        <div class='container'>
-            <div class='row'>
-                <div class='col-xs-12 col-sm-12 col-md-6'>
-                    <h2>
-                        تعرف علي شركتنا
-                    </h2>
-                    <div class='short-line-long'></div>
-                    <h3 data-aos="fade-up-right">
-                        تستخدم شركة إيما جميع التقنيات الحديثة المطلوبة لتحقيق أهداف العميل ، بناءً على سلامة وجودة المنتج.
-                        لدى ايما سياسة الصحة والسلامة والبيئة الخاصة بها بالكامل ليتم تطبيقها في جميع مواقع العمل.
-                    </h3>
-                    <h4 class='company-birth'>
-                        نعمل في البنية التحتية من عام 
-                        2009
-                    </h2>
-                    <div class='company-birth-div-btn' style='float: left;margin-top: 20px;margin-bottom: 50px;'>
-                        <a href="{{url_for('our_services')}}" class='btn btn-danger'>
-                            تفقد اعمالنا
-                        </a>
-                    </div>
-                </div>
-                <div class='col-xs-12 col-sm-12 col-md-6'>
-                    <img src='/static/photos/Mining-1024x1024.jpg'>
-                </div>
-    
-            </div>
-        </div>    
-    </div>
-    <div class='container-fluid vision  text-white'>
-        <div class='container'>
-            <div class='row'>
-                <div class='col-xs-12 col-sm-12 col-md-6 vision-img'>
-                    <img src='/static/photos/vision.png'>
-                </div>
-                <div class='col-xs-12 col-sm-12 col-md-6 vision-text' data-aos="fade-up-right">
-                    <h2>
-                        رؤيتنا
-                    </h2>
-                    <div class="short-line-medium"></div>
+                    <div class="short-line"></div>
                     <p>
-                        تتمثل رؤيتنا في أن نكون شركة موارد طبيعية عالمية المستوى تحظى باحترام كبير وتلتزم بالالتزام بالمعايير الدولية في عمليات التعدين والحفاظ على البيئة وتقديم قيمة ممتازة للمجتمعات الشريكة والمستثمرين والموظفين وأصحاب المصلحة الآخرين.
+                        تقوم شركة ايما بستخراج المواد الخام
+                        أعمال الحفر والتراب بما في ذلك الطرق في جميع أنواع التربة باستخدام جميع المعدات المطلوبة مثل الحفارات والمطارق والجرافات واللوادر والقلاب.
+
                     </p>
                 </div>
             </div>
         </div>
-        
     </div>
-    <div class='container-fluid cards'>
-        <div class='container-fluid raw-materials-imgs'>
-            <div class='raw-materials'>
-                <h2>
-                    المواد الخام التي نستخرجها
-                    
-                </h2>
-                <div class='short-line-long'></div>
-            </div>
-            
-            <div class='row' data-aos="fade-up-right">
-                <div class='col-sm-12 col-md-4'>
-                    <div>
-                        <img src='/static/photos/5d906aa825d50-dolomite-marble.jpg'>
-                    </div>
-                        <strong>دولوميت</strong>
-                    
-                    </div>
-                
-                <div class='col-sm-12 col-md-4'>
-                    <div>
-                        <img src='/static/photos/رمل.jpeg'> 
-                    </div>  
-                        <strong>رمل</strong>
-                        
+    <div class="container-fluid main-services-images" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="/static/photos/جبس.jpg" style="width: 100%;height: 300px;">
                 </div>
-                 <div class='col-sm-12 col-md-4' style='margin-bottom: 100px;'>
-                    <div>
-                        <img src='/static/photos/جبس.jpg'> 
-                    </div>   
-                        <strong>جبس</strong>
-                            
-                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>
+                        المواد الخام
+                    </h3>
+                        <div class="short-line"></div>
+                    <p>
 
-                <div class='col-sm-12 col-md-4'>
-                    <div>
-                        <img src='/static/photos/rubble.jfif'> 
-                    </div>   
-                        <strong>حصى</strong>
-                            
+                        استخراج المواد الخام من الجبال مثل الجبس و الطفلة و الدبش و دولوميت و رمل و سن
+                       باستخدام التقنيات الحديثة المطلوبة لتحقيق أهداف العميل ، بناءً على سلامة وجودة المنتج.             
+        
+                    </p>
                 </div>
-                <div class='col-sm-12 col-md-4'>
-                    <div>
-                        <img src='/static/photos/clay.jfif'> 
-                    </div>   
-                        <strong>طفل</strong>  
-                          
-                </div>
-                <div class='col-sm-12 col-md-4'>
-                    <div>
-                        <img src='/static/photos/zalat.jpg'> 
-                    </div>   
-                        <strong>زلط</strong>  
-                </div>
-            </div>
             </div>
         </div>
     </div>
-    <div class='container-fluid footer' data-aos="fade-up-right">
+    <div class="container-fluid" style="background-color: #303030;color: white;">
+        <div class="container" style="padding: 20px 0;text-align: center;">
+                    <p style="font-weight: bolder;">
+                        اذا كان لديك سؤال فريقنا جاهز للإجابة على جميع أسئلتك
+                    </p>
+                    <a href="{{url_for('contact_us')}}" class="btn btn-danger" style="margin-right: 10px;">
+                        تواصل معنا
+                    </a>
+        </div>
+    </div>
+    <div class="container-fluid main-services-images">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="/static/photos/mining-engineer-3.jpg" style="width: 100%;height: 300px;">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>
+                        مهندسينا
+                    </h3>
+                        <div class="short-line"></div>
+                    <p>
+
+                        امهندسو إيما مؤهلون بما يكفي للتعامل مع الأجهزة والبرامج الحديثة للقيام بأعمال المسح مثل:<br>
+                        المسح الطبوغرافي للأراضي والجبال.<br>
+                        إنشاء الخرائط الكنتورية والملفات الشخصية.<br>
+                        إنشاء نمذجة التضاريس للنقاط التي تم مسحها.<br>
+                        إنشاء قياسات متساوية ووجهات نظر مختلفة للنماذج.<br>
+                        حساب الكميات والكميات.<br>
+                        عمل خطط التعدين للمحاجر.<br>
+                        ضع النقاط والخطوط.<br>
+                        التحكم في أعمال التسوية.             
+        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-services-images" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="/static/photos/clients.jpg" style="width: 100%;height: 300px;">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h3>
+                        عملائنا
+                    </h3>
+                        <div class="short-line"></div>
+                    <p style="line-height: 2em;">
+                        الشركة المصرية للجبس<br>
+                        شركة النصر للمباني و الانشرات - اجيكو<br>
+                        مصنع المحركات - الهيئة العربية للتصنيع<br>
+                        مصنع حلوان للصنعات المتطورة - الهيئة العربية للتصنيع <br>
+                        شركة مياة الشرب بالاسكندرية<br>
+                        الجمعية التعاونبة الانتجاية - ساندستون<br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="text-align: center;background-color: #f7f7f7;margin-bottom: 10px;">
+        <div class="container">
+            <div style="margin-bottom: 40px;padding-top: 30px;">
+                <h2>
+                    صور من الموقع
+                </h2>
+                <div class="short-line-long"></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-column">
+                    <img src="/static/photos/جرارات تعمل.jpg">
+                    <img src="/static/photos/جرار علي سيارة.jpg">
+                    <img src="/static/photos/idk.png">
+                </div>
+                <div class="grid-column">
+                  <img src="/static/photos/جراران.jpg">
+                  <img src="/static/photos/عملية تغيير الحجم.png">
+                  <img src="/static/photos/جرارات.jpg" style="height: 400px;">
+    
+                </div>
+                <div class="grid-column">
+                  <img src="/static/photos/IMG-20201126-WA0013.jpg">
+                  <img src="/static/photos/IMG-20201126-WA0017.jpg">
+                  <img src="/static/photos/كسارات متحركة 2.jpg">
+                </div>
+                <div class="grid-column">
+                    <img src="/static/photos/IMG-20201126-WA0009.jpg">
+                    <img src="/static/photos/اعمال حفر في البرقان.png">
+                    <img src="/static/photos/جرار غيب.png">
+
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class='container-fluid footer' style="padding-top: 40px;">
         <div class='container'>
             <h2>تواصل معنا</h2>
             <div class='short-line-long'></div>
@@ -314,26 +297,9 @@
             </div>
         </div>
     </div>
-    <footer> 
+    <footer style="text-align: center;"> 
         &copy; 2021 All rights Reserved EMA
     </footer>
-
-    <script>
-        AOS.init({duration: 1200,})
-    </script>
-
-    <script>
-        function myFunction(){
-            let x = document.querySelector(".myTopnav");
-            if(x.className == 'topnav')
-            {
-                x.className += ' responsive';
-            }else{
-                x.className = 'topnav';
-            }
-        }
-    </script>
-
-
+    
 </body>
 </html>

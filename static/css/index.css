@@ -236,10 +236,6 @@ span{
 }
 
 
-.cards{
-    margin-left: 2em;
-    margin-right: 2em;
-}
 
 .raw-materials{
     font-size: 30px;
@@ -270,6 +266,15 @@ span{
     background-color: #303030;
     color: #ffffff;
     padding-bottom: 50px;
+}
+footer{
+    background-color: #303030;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
 }
 .footer h2{
     padding-top: 40px;
@@ -329,13 +334,14 @@ span{
 
 @media(max-width: 600px)
 {
-    .topnav a:not(:first-child)
-    {
-        display: none;
-    }
     .topnav a.icon{
         float: right;
         display: block;
+    }
+
+
+    .contact-us-btn{
+        display: none;
     }
 
 }
