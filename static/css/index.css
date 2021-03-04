@@ -86,8 +86,8 @@ ul li a:hover{
 
 .shaded-div .main-title strong{
     font-weight: bolder;
-    color: green;
     font-size: 100px;
+    
 }
 
 .shaded-div h1{
@@ -334,6 +334,12 @@ footer{
 
 @media(max-width: 600px)
 {
+    .shaded-div .main-title{
+        font-size: 40px;
+    }
+    .main-headers h1{
+        font-size: 40px;
+    }
     .topnav a.icon{
         float: right;
         display: block;
