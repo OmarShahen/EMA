@@ -21,6 +21,7 @@ def contact_us():
 
 @app.route('/forms-submission', methods=["POST"])
 def forms():
+    
     user_name = request.form.get('user_name')
     user_email = request.form.get('user_email')
     user_phone = request.form.get('user_phone')
