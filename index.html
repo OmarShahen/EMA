@@ -1,89 +1,339 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <title>EMA</title>
+    <link rel = "shortcut icon" href = "/static/photos/EMA logo.jpg" type = "image/gif">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80b994f4e9.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <script src = "https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.4.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!--Top Nav Responsive-->
+
+    <div class='topnav' id='myTopnav'>
+        <a href="EMA/تواصل-معنا.html">تواصل معنا</a>
+        <a href="EMA/خدمتنا.html">اعمالنا</a>
+        <a href="EMA/الرئسية.html" class='active'>الرئيسية</a>
+
+        <button class='btn btn-danger btn-sm contact-us-btn' data-toggle="modal" data-target="#myModal" >تواصل معنا</button>
+        <img src="EMA/static/photos/EMA logo.jpg" class="company-logo" style="width: 60px;height: 53.44px;">
+    </div >
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST">
+                        <div class="form-group">
+                            <label>
+                                :
+                                الاسم
+                            </label>
+                            <input type="text" name="user_name" placeholder="اسم الزائر" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                :
+                                البريد الاكتروني
+                            </label>
+                            <input type="email" name="user_email" placeholder="بريد الزائر" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                :
+                                رقم الهاتف
+                            </label>
+                            <input type="text" name="user_phone" placeholder="رقم هاتف الزائر" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                :
+                                الرسالة
+                            </label>
+                            <textarea name= "user_message" col=60 rows=5 class="form-control"> 
+
+                            </textarea>
+                        </div>
+                        <div style="text-align: left;">
+                            <input type="submit" class="btn btn-danger" value="ارسل">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+
+
+    <!---->
+    <div class='container-fluid home parallax'>
+        <div class='shaded-div'>
+
+            <h1 class='main-title'>
+                <strong>EMA</strong><br>
+                 
+                 شركة مقاولات متخصصة فى مشروعات البنية التحتيه والطرق والكبارى والمحاجر والتعدين            </h1>
+        </div>
+    </div>
+    <div class='container'>
+        <div class='main-headers'>
+            <h1 data-aos = "fade-left">
+                للمقولات العامة في البنية التحتية و الانشئات و استخراج المواد الخام
+            </h1>
+            <div class='row small-icons'>
+                <div class='col-xs-12 col-sm-12 col-md-4'>
+                    <h3>
+                        <img src='/static/photos/mining.svg'>
+                        طرق الاستخراج
+                    </h3>
+                    <div class='short-line'>
+
+                    </div>
+                    <p data-aos="fade-up-right">
+                          تقوم شركة ايما بستخراج المواد الخام
+                        أعمال الحفر والتراب بما في ذلك الطرق في جميع أنواع التربة باستخدام جميع المعدات المطلوبة مثل الحفارات والمطارق والجرافات واللوادر والقلاب.
+                    </p>
+                </div>
+                <div class='col-xs-12 col-sm-12 col-md-4' style='margin-left: 0px;'>
+                    <h3>
+                        <img src='/static/photos/customer-support.svg'>
+                    عن خدمتنا
+                    </h3>
+                    <div class='short-line'>
+
+                    </div>
+                    <p data-aos="fade-up-right">
+                        تقدم شركة ايما الخدمات في مجال تنشيط التعدين ، أعمال الأرض ، برامج التعدين ، وهندسة المساحة.
+                        أعمال الحفر والتراب بما في ذلك الطرق في جميع أنواع التربة باستخدام جميع المعدات المطلوبة مثل الحفارات والمطارق والجرافات واللوادر والقلاب.
+                        أعمال المسح بما في ذلك المسح الطوبوغرافي ، المحدد ، المحاذاة ، خطط التعدين ، العد المادي ، ... إلخ.
+                                        </div>
+                <div class='col-xs-12 col-sm-12 col-md-4'>
+                    <h3>
+                        <img src='/static/photos/Supply-marketeconomy-factory-supplier-distribution-rawmaterial-128.png'>
+                         المواد الخام
+                    </h3>
+                    <div class='short-line'>
+
+                    </div>
+                    <p data-aos="fade-up-right">
+                        استخراج المواد الخام من الجبال مثل الجبس و الطفلة و الدبش و دولوميت و رمل و سن                    </p>
+                </div>
+            </div>
+
+            <!--Finished The small Icons part-->
+        </div>
+    </div>
+    <div class='container-fluid about-us'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-12 col-md-6'>
+                    <h2>
+                        تعرف علي شركتنا
+                    </h2>
+                    <div class='short-line-long'></div>
+                    <h3 data-aos="fade-up-right">
+                        تستخدم شركة إيما جميع التقنيات الحديثة المطلوبة لتحقيق أهداف العميل ، بناءً على سلامة وجودة المنتج.
+                        لدى ايما سياسة الصحة والسلامة والبيئة الخاصة بها بالكامل ليتم تطبيقها في جميع مواقع العمل.
+                    </h3>
+                    <h4 class='company-birth'>
+                        نعمل في البنية التحتية من عام 
+                        2009
+                    </h2>
+                    <div class='company-birth-div-btn' style='float: left;margin-top: 20px;margin-bottom: 50px;'>
+                        <a href="./خدمتنا.html" class='btn btn-danger'>
+                            تفقد اعمالنا
+                        </a>
+                    </div>
+                </div>
+                <div class='col-xs-12 col-sm-12 col-md-6'>
+                    <img src='/static/photos/Mining-1024x1024.jpg'>
+                </div>
+    
+            </div>
+        </div>    
+    </div>
+    <div class='container-fluid vision  text-white'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-12 col-md-6 vision-img'>
+                    <img src='/static/photos/vision.png'>
+                </div>
+                <div class='col-xs-12 col-sm-12 col-md-6 vision-text' data-aos="fade-up-right">
+                    <h2>
+                        رؤيتنا
+                    </h2>
+                    <div class="short-line-medium"></div>
+                    <p>
+                        تتمثل رؤيتنا في أن نكون شركة موارد طبيعية عالمية المستوى تحظى باحترام كبير وتلتزم بالالتزام بالمعايير الدولية في عمليات التعدين والحفاظ على البيئة وتقديم قيمة ممتازة للمجتمعات الشريكة والمستثمرين والموظفين وأصحاب المصلحة الآخرين.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class='container-fluid cards'>
+        <div class='container-fluid raw-materials-imgs'>
+            <div class='raw-materials'>
+                <h2>
+                    المواد الخام التي نستخرجها
+                    
+                </h2>
+                <div class='short-line-long'></div>
+            </div>
+            
+            <div class='row' data-aos="fade-up-right">
+                <div class='col-sm-12 col-md-4'>
+                    <div>
+                        <img src='/static/photos/5d906aa825d50-dolomite-marble.jpg'>
+                    </div>
+                        <strong>دولوميت</strong>
+                    
+                    </div>
+                
+                <div class='col-sm-12 col-md-4'>
+                    <div>
+                        <img src='/static/photos/رمل.jpeg'> 
+                    </div>  
+                        <strong>رمل</strong>
+                        
+                </div>
+                 <div class='col-sm-12 col-md-4' style='margin-bottom: 100px;'>
+                    <div>
+                        <img src='/static/photos/جبس.jpg'> 
+                    </div>   
+                        <strong>جبس</strong>
+                            
+                </div>
+
+                <div class='col-sm-12 col-md-4'>
+                    <div>
+                        <img src='/static/photos/rubble.jfif'> 
+                    </div>   
+                        <strong>حصى</strong>
+                            
+                </div>
+                <div class='col-sm-12 col-md-4'>
+                    <div>
+                        <img src='/static/photos/clay.jfif'> 
+                    </div>   
+                        <strong>طفل</strong>  
+                          
+                </div>
+                <div class='col-sm-12 col-md-4'>
+                    <div>
+                        <img src='/static/photos/zalat.jpg'> 
+                    </div>   
+                        <strong>زلط</strong>  
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class='container-fluid footer'>
+        <div class='container'>
+            <h2>تواصل معنا</h2>
+            <div class='short-line-long'></div>
+            <div class='row'>
+                <div class='col-sm-12 col-md-5 contact-icons' style='margin-right: 40px;'>
+                    <h4 style='margin-bottom: 40px;font-weight: bolder;'>
+                        اتصل بنا وسنعاود الاتصال بك في غضون 24 ساعة.
+                    </h4>
+                    <p>
+                        <i class="material-icons" style="font-size:20px">place</i>
+                        <span>
+                            53 شارع فيكتور عمانويل امام مول زهران سموحة الاسكندرية
+                        </span>    
+                    </p>
+                    <p>
+                        <i class="fa fa-phone" style="font-size:20px"></i>
+                    <span>
+                        0111-9021-217
+                    </span>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope" style="font-size:20px"></i>
+                        <span>
+                            chairman@ema-egypt.com
+                        </span>
+                    </p>
+                </div>
+
+                <div class='col-sm-12 col-md-6'>
+                    <form method="POST">
+                        <div class='row'>
+                            <div class='col-md-6 col-sm-12'>
+                                <label>
+                                    :
+                                    الاسم
+                                </label>
+                                <input type='text' name='user_name' class='form-control' placeholder="اسم الزائر">
+                            </div>
+                            <div class='col-md-6 col-sm-12'>
+                                <label>
+                                    :
+                                    البريد الاكتروني
+                                </label>
+                                <input type='email' name='user_email' class='form-control' placeholder="بريد الزائر">
+                            </div>
+                            <div class="col-md-12">
+                                <label>
+                                    :
+                                    رقم الهاتف
+                                </label>
+                                <input type="text" name="user_phone" class="form-control" placeholder=" رقم هاتف الزائر">
+                            </div>
+                            <div class='col-md-12' style='margin-top: 20px;'>
+                                <label>
+                                    :
+                                    الرسالة
+                                </label>
+                                <textarea  class='form-control' name= 'user_message' col='60' rows='10' placeholder="الرسالة">
+                                </textarea>
+                                <div style="float: left;margin-top: 20px;">
+                                    <input type="submit" value="ارسل" class="btn btn-danger">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer> 
+        &copy; 2021 All rights Reserved EMA
+    </footer>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        AOS.init({duration: 1200,})
     </script>
-  </body>
+
+    <script>
+        function myFunction(){
+            let x = document.querySelector(".myTopnav");
+            if(x.className == 'topnav')
+            {
+                x.className += ' responsive';
+            }else{
+                x.className = 'topnav';
+            }
+        }
+    </script>
+
+
+</body>
 </html>
