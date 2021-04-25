@@ -1,0 +1,70 @@
+
+.modal-header img{
+    width: 100%;
+    height: 300px;
+}
+
+.parallax{
+    background-image: url('/static/photos/istockphoto-1170264057-612x612.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 0px;
+}
+
+.header{
+    text-align: center;
+}
+
+.shaded-div h1{
+    padding-top: 10%;
+}
+
+.main-headers h1{
+    font-size: 40px;
+}
+
+.home{
+    margin-bottom: 10px;
+}
+
+.form-main-header{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.modal-dialog{
+    background-color: #f7f7f7;
+}
+
+.egypt-flag{
+    width: 50px;
+    height:50px;
+    margin-bottom: 10px;
+}
+
+span{
+    font-size: 1em;
+    color: #303030;
+}
+
+.main-headers h1{
+    padding-top: 15px;
+}
+
+.small-icons{
+    margin-top: 0;
+}
+
+.contact-us-info{
+    margin-top: 100px;
+}
+
+.contact-us-info div{
+    margin-bottom: 20px;
+}

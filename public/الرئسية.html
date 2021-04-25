@@ -23,12 +23,12 @@
     <!--Top Nav Responsive-->
 
     <div class='topnav' id='myTopnav'>
-        <a href="{{url_for('contact_us')}}">تواصل معنا</a>
-        <a href="{{url_for('our_services')}}">اعمالنا</a>
-        <a href="{{url_for('landing_page')}}" class='active'>الرئيسية</a>
+        <a href="./تواصل-معنا.html">تواصل معنا</a>
+        <a href="./خدمتنا.html">اعمالنا</a>
+        <a href="./الرئسية.html" class='active'>الرئيسية</a>
 
         <button class='btn btn-danger btn-sm contact-us-btn' data-toggle="modal" data-target="#myModal" >تواصل معنا</button>
-        <img src="/static/photos/EMA logo.jpg" class="company-logo" style="width: 60px;height: 53.44px;">
+        <img src="./static/photos/EMA logo.jpg" class="company-logo" style="width: 60px;height: 53.44px;">
     </div >
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
@@ -39,7 +39,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{url_for('forms')}}">
+                    <form method="POST">
                         <div class="form-group">
                             <label>
                                 :
@@ -155,7 +155,7 @@
                         2009
                     </h2>
                     <div class='company-birth-div-btn' style='float: left;margin-top: 20px;margin-bottom: 50px;'>
-                        <a href="{{url_for('our_services')}}" class='btn btn-danger'>
+                        <a href="./خدمتنا.html" class='btn btn-danger'>
                             تفقد اعمالنا
                         </a>
                     </div>
@@ -274,7 +274,7 @@
                 </div>
 
                 <div class='col-sm-12 col-md-6'>
-                    <form method="POST" action="{{url_for('forms')}}">
+                    <form method="POST">
                         <div class='row'>
                             <div class='col-md-6 col-sm-12'>
                                 <label>
