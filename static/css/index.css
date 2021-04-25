@@ -73,7 +73,6 @@ ul li a:hover{
 
 
 .parallax{
-    background-image: url('/static/photos/pexels-tom-fisk-2101137.jpg');
     height: 800px;
     background-attachment: fixed;
     background-position: center;
