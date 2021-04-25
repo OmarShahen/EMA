@@ -72,17 +72,6 @@ ul li a:hover{
 }
 
 
-.parallax{
-    height: 800px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    opacity: 1.2;
-    padding: 0px;
-}
-
 .shaded-div .main-title strong{
     font-weight: bolder;
     font-size: 100px;
