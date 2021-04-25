@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ema تواصل معنا</title>
-    <link rel = "shortcut icon" href = "/static/photos/EMA logo.jpg" type = "image/gif">
+    <link rel = "shortcut icon" href = "./static/photos/EMA logo.jpg" type = "image/gif">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/80b994f4e9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="/static/css/contact-us.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/contact-us.css">
 </head>
 <body>
     <div class='topnav' id='myTopnav' style="position: relative;">
-        <a href="{{url_for('contact_us')}}" class='active'>تواصل معنا</a>
-        <a href="{{url_for('our_services')}}">اعمالنا</a>
-        <a href="{{url_for('landing_page')}}">الرئيسية</a>
+        <a href="تواصل-معنا.html" class='active'>تواصل معنا</a>
+        <a href="خدمتنا.html">اعمالنا</a>
+        <a href="index.html">الرئيسية</a>
 
         <button class='btn btn-danger btn-sm contact-us-btn' data-toggle="modal" data-target="#myModal" >تواصل معنا</button>
-        <img src="/static/photos/EMA logo.jpg"style="width: 60px;height: 53.44px;">
+        <img src="./static/photos/EMA logo.jpg"style="width: 60px;height: 53.44px;">
     </div >
     <div class="modal" id="myModal">
         <div class="modal-dialog">
@@ -34,7 +34,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="{{url_for('forms')}}" method="POST">
+                    <form  method="POST">
                         <div class="form-group">
                             <label>
                                 :
