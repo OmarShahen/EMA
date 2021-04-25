@@ -137,6 +137,18 @@ span{
     color: #777777;
 }
 
+.parallax{
+    background-image: url('./static/photos/pexels-tom-fisk-2101137.jpg');
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    opacity: 1.2;
+    padding: 0px;
+}
+
 .short-line{
     display: inline-block;
     margin-top: 7px;
