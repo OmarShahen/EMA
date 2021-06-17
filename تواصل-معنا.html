@@ -47,7 +47,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form  method="POST">
+                    <form  method="POST" action="https://us-central1-ema-mail-server.cloudfunctions.net/app/ema-mail">
                         <div class="form-group">
                             <label>
                                 :
@@ -111,7 +111,7 @@
                                         ابق على تواصل معنا
                                     </h3>
                                 </div>
-                                <form method="POST" action="{{url_for('forms')}}">
+                                <form method="POST" action="https://us-central1-ema-mail-server.cloudfunctions.net/app/ema-mail">
                                     <div class="form-group">
                                         <i class="fa fa-user" style="font-size: 30px;margin-bottom: 2px;"></i>
                                         <input type="text" name="user_name" class="form-control" placeholder="اسم الزائر" required>

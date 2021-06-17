@@ -3,3 +3,7 @@ public/videos
 *.docx
 EMA
 ema_app
+node_modules
+*.py
+*.txt
+test.html
